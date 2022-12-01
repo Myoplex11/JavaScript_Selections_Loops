@@ -71,12 +71,21 @@ let value = Math.round((Math.random() * 500));
 let n = Math.round(Math.random() * (500 - 100) + 100);
 
 for(i = 0; i <= n; i++) {
-    if(n == value) {
-        console.log("Found value");
-    } else {
-        console.log("Did not find value");
+    if(i == value) {
+        console.log(`"The value is ${i} and we found the value"`);
+    break;
     }
+
+    if(i == n) {
+        console.log(`"The value is ${i} and we did not find the value" `);
+    }
+
 }
+
+
+
+
+
 
 //Exercise 5
 console.log("EXERCISE 5:\n==========\n");
